@@ -6,13 +6,22 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+  <meta name="description" content="安装信息获取 网关服务器，后端服务器的入口 反向代理服务器，代理Http请求，转发至后端服务器  Nginx安装信息获取 123456# 获取Nginx可执行文件路径whereis nginx# 获取Nginx配置文件路径huangxigan@DESKTOP-8059I68:~$ sudo nginx -tnginx: the configuration file &#x2F;etc&#x2F;nginx&#x2F;nginx">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://github.com/schbxg/blog.git/blog/index.html">
+<meta property="og:url" content="https://github.com/schbxg/blog.git/blog/2024/12/28/nginx/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="安装信息获取 网关服务器，后端服务器的入口 反向代理服务器，代理Http请求，转发至后端服务器  Nginx安装信息获取 123456# 获取Nginx可执行文件路径whereis nginx# 获取Nginx配置文件路径huangxigan@DESKTOP-8059I68:~$ sudo nginx -tnginx: the configuration file &#x2F;etc&#x2F;nginx&#x2F;nginx">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://download.huawei.com/mdl/image/download?uuid=ddc6bc501def406188e2826d5ca316fe">
+<meta property="og:image" content="https://download.huawei.com/mdl/image/download?uuid=9f3bc85199d645df98c241537b8795e5">
+<meta property="og:image" content="https://github.com/blog/nginx.assets/image-20241130135508273.png">
+<meta property="og:image" content="https://github.com/blog/nginx.assets/image-20241130135901291.png">
+<meta property="article:published_time" content="2024-12-28T14:37:34.680Z">
+<meta property="article:modified_time" content="2024-12-28T14:37:34.740Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://download.huawei.com/mdl/image/download?uuid=ddc6bc501def406188e2826d5ca316fe">
   
     <link rel="alternate" href="/blog/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -67,9 +76,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-nginx" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-nginx" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/blog/2024/12/28/nginx/" class="article-date">
   <time class="dt-published" datetime="2024-12-28T14:37:34.680Z" itemprop="datePublished">2024-12-28</time>
@@ -207,291 +214,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-test1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/blog/2024/12/28/test1/" class="article-date">
-  <time class="dt-published" datetime="2024-12-28T14:35:09.000Z" itemprop="datePublished">2024-12-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/blog/2024/12/28/test1/">test1</a>
-    </h1>
+    <a href="/blog/2024/12/28/test1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">test1</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/schbxg/blog.git/blog/2024/12/28/test1/" data-id="cm58ad4760004urx08fexhow1" data-title="test1" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
-    <article id="post-Session管理" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/blog/2024/12/28/Session%E7%AE%A1%E7%90%86/" class="article-date">
-  <time class="dt-published" datetime="2024-12-28T13:36:15.934Z" itemprop="datePublished">2024-12-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="Session管理"><a href="#Session管理" class="headerlink" title="Session管理"></a>Session管理</h1><h2 id="JWT是什么？"><a href="#JWT是什么？" class="headerlink" title="JWT是什么？"></a>JWT是什么？</h2><p><strong>JSON Web Tokens</strong>，简称&#x3D;&#x3D;JWT&#x3D;&#x3D;，是一种开放标准（RFC7519）它定义了一种紧凑和自包含的方式，用于在各方之间作为JSON对象安全地传输信息。</p>
-<p>一般跨域认证流程：</p>
-<ol>
-<li>用户向服务器发送用户名和密码。</li>
-<li>服务器验证通过后，在当前对话（session）里面保存相关数据，比如用户角色、登录时间等等</li>
-<li>服务器向用户返回一个 session_id，写入用户的 Cookie。</li>
-<li>用户随后的每一次请求，都会通过 Cookie，将 session_id 传回服务器。</li>
-<li>服务器收到 session_id，找到前期保存的数据，由此得知用户的身份。</li>
-</ol>
-<blockquote>
-<p>Cookie是一种存储方式，概念类似Local Storage，存在于HTTP头部中。</p>
-<p>用户浏览网站，由服务器创建并由浏览器存放在用户计算机或其他设备的小文本文件。</p>
-<p>Cookie使Web服务器能在用户的设备存储状态信息（如添加到在线商店购物车中的商品）或跟踪用户的浏览活动（如点击特定按钮、登录或记录历史）</p>
-</blockquote>
-<p>如果是服务器集群，就需要Session共享，每台服务器都能够读到Session。</p>
-<h2 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h2><p><strong>JWT</strong></p>
-<ol>
-<li>用户登录后，服务器生成JWT（包含用户信息，经过签名加密）。</li>
-<li>客户端存储JWT（可以是LocalStorage、SessionStorage或Cookie）。</li>
-<li>客户端每次请求时携带JWT，服务器通过解码和验证签名来确认用户身份，无需存储状态。</li>
-</ol>
-<p><strong>Session</strong></p>
-<ol>
-<li><p>用户登录后，服务器生成Session数据，并返回一个会话ID给客户端。</p>
-</li>
-<li><p>客户端每次请求时携带Session ID，服务器验证后读取会话数据。</p>
-</li>
-<li><p>Session通常需要服务器维护一个存储机制，比如Redis、内存或数据库。</p>
-</li>
-</ol>
-<h2 id="Session与JWT的存储内容"><a href="#Session与JWT的存储内容" class="headerlink" title="Session与JWT的存储内容"></a>Session与JWT的存储内容</h2><h3 id="Session"><a href="#Session" class="headerlink" title="Session"></a><strong>Session</strong></h3><ul>
-<li><p>状态存储在<strong>服务器</strong>上，通常通过内存或数据库保存用户的会话数据。</p>
-</li>
-<li><p>客户端仅保存一个会话ID（通常通过Cookie或URL参数传递），服务器通过该ID检索用户的会话数据。</p>
-</li>
-</ul>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"># 可能保存的几种常见的状态信息</span><br><span class="line"># <span class="number">1.</span>用户身份信息</span><br><span class="line"># <span class="number">2.</span>认证状态：登录状态、CSRF Token</span><br><span class="line"># <span class="number">3.</span>应用特定的业务数据</span><br><span class="line"># <span class="number">4.</span>安全相关的状态</span><br><span class="line"># <span class="number">5.</span>状态标志</span><br><span class="line"># <span class="number">6.</span>会话元信息</span><br><span class="line"></span><br><span class="line"># 保存示例</span><br><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;session_id&quot;</span><span class="punctuation">:</span> <span class="string">&quot;abcd1234&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;user_id&quot;</span><span class="punctuation">:</span> <span class="number">1001</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;role&quot;</span><span class="punctuation">:</span> <span class="string">&quot;admin&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;is_logged_in&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;csrf_token&quot;</span><span class="punctuation">:</span> <span class="string">&quot;xyz987&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;cart_items&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span><span class="attr">&quot;product_id&quot;</span><span class="punctuation">:</span> <span class="number">101</span><span class="punctuation">,</span> <span class="attr">&quot;quantity&quot;</span><span class="punctuation">:</span> <span class="number">2</span><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span><span class="attr">&quot;product_id&quot;</span><span class="punctuation">:</span> <span class="number">202</span><span class="punctuation">,</span> <span class="attr">&quot;quantity&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;preferences&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;language&quot;</span><span class="punctuation">:</span> <span class="string">&quot;en&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;theme&quot;</span><span class="punctuation">:</span> <span class="string">&quot;dark&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;last_active&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2024-11-26T12:34:56Z&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;expires_at&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2024-11-26T14:00:00Z&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="JWT"><a href="#JWT" class="headerlink" title="JWT"></a><strong>JWT</strong></h3><p>存储方式</p>
-<ul>
-<li><p>状态存储在<strong>客户端</strong>，JWT是一个自包含的Token，直接携带用户的信息（通常是加密后的）。</p>
-</li>
-<li><p>无需服务器存储，Token通过Cookie、HTTP Header或其他方式传递。</p>
-</li>
-</ul>
-<p>JWT内容包含三个部分</p>
-<ul>
-<li>Header</li>
-<li>Payload</li>
-<li>Signature</li>
-</ul>
-<img src="https://cdn.beekka.com/blogimg/asset/201807/bg2018072304.jpg" alt="img" style="zoom:80%;" />
-
-<p>&#x3D;&#x3D;Header&#x3D;&#x3D; 部分是一个 JSON 对象，描述 JWT 的元数据。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;alg&quot;</span>: <span class="string">&quot;HS256&quot;</span>,</span><br><span class="line">  <span class="string">&quot;typ&quot;</span>: <span class="string">&quot;JWT&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>上面代码中，<code>alg</code>属性表示签名的算法（algorithm），默认是 HMAC SHA256（写成 HS256）；<code>typ</code>属性表示这个令牌（token）的类型（type），JWT 令牌统一写为<code>JWT</code>。</p>
-<p>**&#x3D;&#x3D;Payload&#x3D;&#x3D;**部分也是一个 JSON 对象，用来存放实际需要传递的数据。JWT 规定了7个官方字段，供选用。</p>
-<ul>
-<li>iss (issuer)：签发人</li>
-<li>exp (expiration time)：过期时间</li>
-<li>sub (subject)：主题</li>
-<li>aud (audience)：受众</li>
-<li>nbf (Not Before)：生效时间</li>
-<li>iat (Issued At)：签发时间</li>
-<li>jti (JWT ID)：编号</li>
-</ul>
-<p>除了官方字段，你还可以在这个部分定义私有字段，下面就是一个例子。</p>
- <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> &#123;</span><br><span class="line">   <span class="string">&quot;sub&quot;</span>: <span class="string">&quot;1234567890&quot;</span>,</span><br><span class="line">  	<span class="string">&quot;name&quot;</span>: <span class="string">&quot;John Doe&quot;</span>,</span><br><span class="line">   <span class="string">&quot;admin&quot;</span>: <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>注意，JWT 默认是不加密的，任何人都可以读到，所以不要把秘密信息放在这个部分。</p>
-<p>这个 JSON 对象也要使用 Base64URL 算法转成字符串。</p>
-<p>&#x3D;&#x3D;Signature&#x3D;&#x3D; 部分是对前两部分的签名，防止数据篡改。</p>
-<p>首先，需要指定一个密钥（secret）。这个密钥只有服务器才知道，不能泄露给用户。然后，使用 Header 里面指定的签名算法（默认是 HMAC SHA256），按照下面的公式产生签名。</p>
- <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">HMACSHA256</span>(</span><br><span class="line">  <span class="title function_">base64UrlEncode</span>(header) + <span class="string">&quot;.&quot;</span> +</span><br><span class="line">  <span class="title function_">base64UrlEncode</span>(payload),</span><br><span class="line">  secret)</span><br></pre></td></tr></table></figure>
-
-<p>算出签名以后，把 Header、Payload、Signature 三个部分拼成一个字符串，每个部分之间用”点”（<code>.</code>）分隔，就可以返回给用户。</p>
-<p><strong>特性对照表</strong></p>
-<table>
-<thead>
-<tr>
-<th>特性</th>
-<th>Session</th>
-<th>JWT</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>存储位置</td>
-<td>服务器</td>
-<td>客户端</td>
-</tr>
-<tr>
-<td>是否无状态</td>
-<td>否</td>
-<td>是</td>
-</tr>
-<tr>
-<td>扩展性</td>
-<td>较差</td>
-<td>较好</td>
-</tr>
-<tr>
-<td>安全性</td>
-<td>基于Session ID</td>
-<td>基于Token内容和签名</td>
-</tr>
-<tr>
-<td>应用场景</td>
-<td>传统Web应用</td>
-<td>分布式，前后端分离</td>
-</tr>
-</tbody></table>
-<h2 id="业务系统中的应用"><a href="#业务系统中的应用" class="headerlink" title="业务系统中的应用"></a>业务系统中的应用</h2><p>采用Token-Base方式进行会话管理，利用类“双Token”的方式实现用户的&#x3D;&#x3D;无感刷新&#x3D;&#x3D;，保证活跃用户不会因为<code>Token</code>过期要求重新登陆。</p>
-<ol>
-<li>调用登录接口，<code>Server</code>生成<code>Token</code>，将<code>Token</code>返回至前端。</li>
-<li>前端后续的接口请求需携带该<code>Token</code>，后端服务校验<code>Token</code>中的有效期，若在有效期内，则正常响应该请求；若不在&#x3D;&#x3D;初始有效期&#x3D;&#x3D;内，校验是否在&#x3D;&#x3D;续期&#x3D;&#x3D;内，若在续期内，将重新生成<code>Token</code>，返回给前端。</li>
-<li>若不在续期内，需要重新调度登录接口获取新的<code>Token</code>。</li>
-</ol>
-<blockquote>
-<p>Server会指定两个有效期，初始有效期、续期。初始有效期生成<code>Token</code>时，存入<code>Token</code>中，由<code>Token</code>类库校验。<code>Redis</code>存储创建<code>Token</code>时的时间戳，需要校验时，从<code>Redis</code>中读取时间与续期进行校验。</p>
-</blockquote>
-<p>Redis Token信息数据格式</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;token&quot;</span><span class="punctuation">:</span><span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;token&quot;</span><span class="punctuation">:</span>string<span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;time&quot;</span><span class="punctuation">:</span>unsigned long long<span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a target="_blank" rel="noopener" href="https://www.ibm.com/docs/en/cics-ts/6.x?topic=cics-json-web-token-jwt">JSON Web Token (JWT) - IBM Documentation</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/schbxg/blog.git/blog/2024/12/28/Session%E7%AE%A1%E7%90%86/" data-id="cm58ad46z0000urx051xjhwr0" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-test" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/blog/2024/12/28/test/" class="article-date">
-  <time class="dt-published" datetime="2024-12-28T13:06:15.000Z" itemprop="datePublished">2024-12-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/blog/2024/12/28/test/">test</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/schbxg/blog.git/blog/2024/12/28/test/" data-id="cm58ad4750003urx06w12ewr0" data-title="test" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/blog/2024/12/28/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2024-12-28T13:04:03.509Z" itemprop="datePublished">2024-12-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/blog/2024/12/28/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/schbxg/blog.git/blog/2024/12/28/hello-world/" data-id="cm58ad4730001urx04eff3v25" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
